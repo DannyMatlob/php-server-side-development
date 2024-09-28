@@ -1,0 +1,11 @@
+KEY1 1 False
+KEY2 5 False
+KEY3 23 False
+KEY4 4 False
+KEY4 4 False
+KEY5 5.3 False
+KEY5 5 False
+KEY6 Garbage False
+KEY6 6 False
+KEY7 7 True
+KEY7 7 False

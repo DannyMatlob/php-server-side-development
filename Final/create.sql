@@ -1,0 +1,17 @@
+DROP DATABASE lame;
+CREATE DATABASE IF NOT EXISTS lame;
+USE lame;
+
+CREATE TABLE IF NOT EXISTS users (
+    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(100) NOT NULL,
+    hash CHAR(60) NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS questions (
+    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    user_id INT NOT NULL REFERENCES users(id),
+    question VARCHAR(200) NOT NULL,
+    UNIQUE (user_id, question)
+);
+
